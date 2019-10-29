@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login </title>
+        <link rel="stylesheet" href='/static/style.css' />
+    </head>
+
+    <body>
+        <center>
+            <div class="header">
+                <h1> Login </h1>
+            </div>
+            <div class="content">
+                </br>
+                <form action="login" method="post">
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" value="Login">
+                </form>
+                </br>
+                
+                    <p>
+                        <font size="3" color="red">{{login}}</font>
+                    </p>
+                
+                <input type="submit" value="Registrieren" onclick="window.location='register';" /> 
+                </br>
+                </br>
+            </div>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Dateien löschen </title>
+        <link rel="stylesheet" href='/static/style.css' />
+    </head>
+
+    <body>
+        <center>
+            <div class="header">
+                <h1> Dateien löschen </h1>
+            </div>
+            <div class="content">
+                </br>
+                <form action="delete" method="post">
+                  <select name="file">
+                      {%- for item in files recursive %}
+                      <option value="{{ item }}">{{ item }}</option>
+                      {%- endfor %}
+                  </select>
+                    <input type="submit" value="delete">
+                </form>
+                </br>
+            </div>
+        </center>
+    </body>
+</html>

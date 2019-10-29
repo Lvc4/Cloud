@@ -1,0 +1,24 @@
+html{
+background-color:lightyellow;
+text-align:center;
+}
+
+.list{
+  text-align:left;
+}
+
+.header{
+background:orange;
+width:80%;
+
+margin-top:2%;
+border-radius:5px;
+}
+
+.content{
+background:yellow;
+margin-top:1%;
+width:80%;
+
+border-radius:5px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+
+	<body bgcolor="#E6E6FA">
+		<div id="Liste" style="padding-left: 3%">
+			<h2>Installation</h2>
+			<ul>
+				<li>Libraries installieren:
+					<ul>
+						<strong>Commandline :</strong>
+						<pre>pip install -r requirements.txt</pre>
+					</ul>
+				</li>
+				<li>Variablen konfigurieren:
+					<ul>
+						<p>
+							In der .\MyLibs\configure.py die Variable
+							"mypassword" auf ihre Bedürfnisse anpassen.
+						</p>
+					</ul>
+				</li>
+				<li>Cloud starten:
+					<ul>
+						<strong>Commandline :</strong>
+						<pre>python3 .\server.py</pre>
+					</ul>
+				</li>
+				<li>Cloud anzeigen:
+					<ul>
+						<p>
+							Im Browser "http://[Ihre Lokale IP]"
+							besuchen und mit dem vorher angegebenen Passwort anmelden.
+						</p>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</br>
+		<div id="text" style="padding-left: 3%">
+			<p>
+				Sofern ihr Router eine Kommunikation zwischen Rechnern innerhalb ihres Netzwerkes zulässt, kann jedes Gerät im LAN oder WLAN mit dem Passwort auf die Cloud zugreifen.</br></br>
+				Wenn ihr Router auch eingehende http-requests durchlässt, kann die Cloud von jedem internetfähigen Gerät aufgerufen werden.</br>
+				In dem Fall jedoch nicht mehr unter http://[Ihre lokale IP], sondern unter http://[Ihre externe IP].
+			</p>
+		</div>
+    </body>
+
+</html>

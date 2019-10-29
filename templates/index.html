@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home </title>
+        <link rel="stylesheet" href='/static/style.css' />
+    <body>
+        <center>
+            <div class="header">
+                <h1> Deine Dateien </h1>
+            </div>
+            <div class="content">
+                </br>
+                <ul class="list">
+                    {%- for item in files recursive %}
+                        <li><a href="/upload/{{ item }}">{{ item }}</a>
+                    {%- endfor %}
+                </ul>
+                <p>
+                    <button onclick="window.location='/upload'">Datei hochladen</button>
+                    <button onclick="window.location='/delete'">Datei löschen</button>
+                    <form action='/' method='post'>
+                        <input type="hidden" name="code" value="1337">
+                        <button type="submit">Logout</button>
+                    </form>
+                </p>
+                </br>
+            <div>
+        </center>
+    </body>
+</html>
